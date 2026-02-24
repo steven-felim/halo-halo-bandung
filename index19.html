@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/style8.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Font Awesome (kalau icon belum muncul) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="page-detail">
+
+    <section class="header">
+    <div class="container">
+            <div class="navbar">
+
+            <div class="logo-nav">
+                <img src="assets/logo/trans.png" alt="Logo" class="logo">
+            </div>
+
+        <!-- JUDUL HEADER -->
+        <div class="header-title">
+        <h1
+           data-aos="fade-up"
+           data-aos-duration="1200"
+          data-aos-delay="200"
+           data-aos-easing="ease-out-cubic">
+          ABOUT US
+          </h1>
+
+         <!-- Breadcrumb -->
+         <div class="breadcrumb" 
+            data-aos="fade-up"
+             data-aos-delay="400">
+          <a href="index.html">Home</a>
+       <span class="dot"></span>
+       <a href="#terms">About Us</a>
+          </div>
+        </div>
+
+        <div class="logo-nav">
+          <img src="assets/logo/trans.png" alt="Logo" class="logo">
+        </div>
+
+        <ul class="menu">
+          <li class="menu-logo">
+            <a href="index.html">
+              <img src="assets/logo/logo2.png" alt="Home" class="menu-logo-img">
+            </a>
+          </li>
+          <li>
+            <a href="index10.html">
+              <i class="fa-solid fa-star"></i>Best Destination
+            </a>
+          </li>
+          <li>
+            <a href="index11.html">
+              <i class="fa-solid fa-list"></i>Culinary
+            </a>
+          </li>
+          <li>
+            <a href="index12.html">
+              <i class="fa-solid fa-image"></i>Gallery
+            </a>
+          </li>
+          <li>
+            <a href="index13.html">
+              <i class="fa-solid fa-information"></i>Information
+            </a>
+          </li>
+        </ul>
+
+        <a href="#footer" class="about-button">About Us</a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CULINARY START -->
+<!-- Gallery -->
+ <section class="about-section" id="terms">
+  <div class="about-container">
+
+    <p>
+      <strong>Halo Halo Bandung</strong> adalah platform layanan perjalanan 
+      yang hadir untuk membantu Anda merencanakan dan menikmati perjalanan 
+      dengan lebih mudah, aman, dan nyaman.
+    </p>
+
+    <p>
+      Kami menyediakan berbagai pilihan layanan perjalanan, mulai dari 
+      pemesanan tiket transportasi, akomodasi, hingga paket wisata Bandung. 
+      Dengan bekerja sama dengan berbagai penyedia layanan terpercaya, 
+      kami berkomitmen memberikan pengalaman perjalanan terbaik untuk setiap pelanggan.
+    </p>
+
+    <h3>Visi Kami</h3>
+    <p>
+      Menjadi mitra perjalanan terpercaya yang memberikan kemudahan dan 
+      kenyamanan dalam setiap perjalanan Anda.
+    </p>
+
+    <h3>Misi Kami</h3>
+    <ul>
+      <li>Menyediakan layanan perjalanan yang transparan dan berkualitas</li>
+      <li>Memberikan informasi yang akurat dan mudah dipahami</li>
+      <li>Mengutamakan kepuasan dan kenyamanan pelanggan</li>
+      <li>Terus berinovasi mengikuti kebutuhan dan perkembangan industri pariwisata</li>
+    </ul>
+
+    <h3>Mengapa Memilih Kami?</h3>
+
+    <ul>
+      <li>Proses pemesanan mudah dan cepat</li>
+      <li>Harga kompetitif dan transparan</li>
+      <li>Layanan pelanggan yang responsif</li>
+      <li>Partner perjalanan yang berpengalaman dan terpercaya</li>
+    </ul>
+
+    <p>
+      Kami percaya bahwa setiap perjalanan adalah cerita berharga. 
+      Oleh karena itu, <strong>Halo Halo Bandung</strong> hadir untuk 
+      menjadi bagian dari setiap langkah perjalanan Anda.
+    </p>
+
+    <p>
+      Terima kasih telah mempercayakan perjalanan Anda kepada kami.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- CULINARY END -->
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      type: "fraction",
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+  });
+</script>
+
+<!-- Footer Image Only -->
+<section class="footer" id="footer">
+  <div class="footer-content">
+    <h4>INFORMATION</h4>
+    <ul>
+      <li><a href="index19.html">ABOUT US</a></li>
+      <li><a href="#">INSTAGRAM</a></li>
+      <li><a href="index18.html">TERMS & CONDITIONS</a></li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+    
+</body>
+</html>

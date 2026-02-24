@@ -1,0 +1,319 @@
+/* Reset Margin dan Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+.main-container {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+    gap: 40px;
+    align-items: flex-start;
+
+    margin: 120px auto 0; /* 👈 ini penting */
+    padding: 0 20px;
+}
+
+.page-detail .header {
+  background-image: none;        /* hilangkan hero background */
+  padding-bottom: 0;
+}
+
+.page-detail .navbar {
+  padding: 25px 0;               /* SAMA PERSIS index1 */
+}
+
+.page-detail .menu {
+  padding: 12px 100px;           /* SAMA */
+  gap: 25px;                     /* SAMA */
+  border-radius: 14px;
+}
+
+.page-detail .logo {
+  height: 34px;                  /* SAMA */
+}
+
+.page-detail .menu-logo img {
+  height: 40px;                  /* SAMA */
+}
+
+/* Container Utama menggunakan Flexbox */
+.main-container {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+    gap: 40px; /* Jarak antara kolom gambar dan kolom teks */
+    align-items: flex-start; /* Memastikan kolom sejajar dari atas */
+}
+
+/* Kolom Kiri (Gambar dan Link) */
+.left-column {
+    flex: 0 0 45%; /* Fixed width 45%, tidak grow atau shrink */
+    display: flex;
+    flex-direction: column; /* Agar gambar dan contact-info vertikal */
+}
+
+.collage-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #1a2b48; /* Warna biru gelap sesuai gambar */
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Kolom Kanan (Teks) */
+.right-column {
+    flex: 1; /* Mengambil sisa ruang */
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 90px; /* Ukuran font besar untuk judul BRAGA */
+    font-weight: bold;
+    color: #1a2b48;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.content-text p {
+    font-size: 18px;
+    text-align: justify; /* Membuat teks rata kanan-kiri */
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Responsif untuk layar HP */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .left-column {
+        flex: none; /* Reset flex untuk mode kolom */
+        max-width: 100%;
+    }
+    .title {
+        font-size: 60px;
+    }
+}
+
+.main-container {
+  margin-top: 50px;
+}
+
+.main-container,
+.main-container h1,
+.main-container p,
+.main-container a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header ul.menu {
+    display: flex;
+    gap: 30px; /* SAMAKAN dengan index1 */
+}
+
+.header ul.menu li {
+    padding: 0;
+    margin: 0;
+}
+
+.header ul.menu li a {
+    padding: 10px 15px; /* NILAI INI YANG BIKIN JARAK ASLI */
+}
+
+
+.page-detail .header {
+  background-image: url("../../assets/images/best-destination/jalan2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 400px;   /* 👈 NAIKIN TINGGI GAMBAR */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-detail .header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* 👈 gelap dikit */
+  z-index: 1;
+}
+
+.page-detail .header .container {
+  position: relative;
+  z-index: 2;
+}
+
+.page-detail .header {
+  position: relative;
+  overflow: hidden; /* 👈 KUNCI UTAMA */
+}
+
+.header-title {
+  position: absolute;
+  top: calc(50% + 160px);   /* 👈 turun 100px */
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  width: 100%;
+}
+
+.header-title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+#Culinary .swiper-slide {
+  height: 400px;              /* 👈 samain tinggi slide (sesuaikan index1) */
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+#Culinary .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* 🔥 INI YANG PALING PENTING */
+  display: block;
+}
+
+.destination-slide {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+/* Paksa gambar ikut tinggi 450px */
+.destination-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* biar tidak gepeng */
+  display: block;
+}
+
+.mySwiper {
+  padding-bottom: 40px;
+}
+
+/* Pindahkan fraction ke bawah */
+.mySwiper .swiper-pagination {
+  position: relative;
+  margin-top: 15px;
+  bottom: auto !important;
+}
+
+.map-wrapper {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.map-wrapper img {
+  width: 100%;
+  max-width: 1000px;   /* biar gak terlalu besar */
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  display: block;
+  margin: 0 auto;
+}
+
+.map-container {
+  position: relative;
+  display: inline-block;
+}
+
+.map-container img {
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+}
+
+/* Semua label */
+.map-label {
+  position: absolute;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px px;
+  transition: 0.3s ease;
+  border-radius: 6px;
+}
+
+/* Hover effect biru */
+.map-label:hover {
+  background-color: #2f80ed;
+  color: white;
+}
+
+.ranca { bottom: 18%; left: 18%; }
+.braga { bottom: 10%; left: 35.2%; }
+.museum { bottom: 7%; left: 58%; }
+
+.tangkuban { top: 26%; left: 16.5%; }
+.greatasia { top: 31%; left: 16.5%; }
+.wahoo { top: 44%; left: 7%; }
+
+.lembang { top: 15%; left: 26%; }
+.orchid { top: 14.5%; left: 53.2%; }
+.dago { top: 19.3%; left: 56.5%; }
+.tahura { top: 27.5%; left: 53.8%; }
+.selasar { top: 32.9%; left: 57%; }
+.manglayang { top: 36.5%; left: 69.8%; }
+
+.header ul.menu {
+    display: flex;
+    gap: 33px; /* SAMAKAN dengan index1 */
+}
+
+.header ul.menu li {
+    padding: 0;
+    margin: 0;
+}
+
+.header ul.menu li a {
+    padding: 8px 6px; /* NILAI INI YANG BIKIN JARAK ASLI */
+}
+
+.header ul.menu {
+    transform: translateX(-24px);
+}
+
+.map-label {
+  position: absolute;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 6px;
+  transition: 0.3s ease;
+  border-radius: 6px;
+  text-decoration: none;   /* 🔥 hilangkan garis bawah */
+  color: black;
+}
